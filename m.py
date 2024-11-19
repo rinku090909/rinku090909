@@ -1,4 +1,4 @@
-#script by @venomXcrazy
+#script by @tejveer0909
 
 import telebot
 import subprocess
@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7543594921:AAEb0Qs9usGggKGl0Q-iZ-JimDzJhtv01e0')
+bot = telebot.TeleBot('7551626078:AAEwKISpY7YzQSkRnssTTYWCKislJm18kao')
 
 # Admin user IDs
-admin_id = ["5894556386"]
+admin_id = ["643217421991"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -189,7 +189,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "You have not purchased yet purchase now from:- @venomXcrazy 🙇."
+        response = "You have not purchased yet purchase now from:- @tejveer0909 🙇."
 
     bot.reply_to(message, response)
 
@@ -357,9 +357,7 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @venomXcrazy
-Official Channel :- https://t.me/V3NOM_CH3AT
-'''
+Buy From :- @tejveer0909
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
             if message.text.startswith('/help'):
@@ -375,7 +373,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
 🤖Try To Run This Command : /help 
-✅BUY :- @venomXcrazy'''
+✅BUY :- @tejveer0909'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
