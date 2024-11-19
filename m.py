@@ -437,7 +437,7 @@ def broadcast_message(message):
         else:
             response = "🤖 Please Provide A Message To Broadcast."
     else:
-        response = "Only Admin Can Run This Command 😡."
+        response = "Use Command All ."
 
     bot.reply_to(message, response)
 
